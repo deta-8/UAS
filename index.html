@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Warisan Payung Lukis Khas Juwiring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .full-screen {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .parallax {
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .parallax .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .parallax .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .animate-fadein {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .animate-fadein.delay-1 {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .bg-light {
+            background-color: #1f1f1f !important;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #2a2a2a !important;
+        }
+
+        .mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 9999;
+        }
+
+        .galeri-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .tentang p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mode-toggle">
+        <button id="toggleMode" class="btn btn-sm btn-outline-light">🌙 Dark Mode</button>
+    </div>
+
+    <header class="bg-danger text-white py-4 sticky-top shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">Warisan Payung Lukis Khas Juwiring</h1>
+            <nav class="mt-3">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#lokasi">Lokasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="beranda" class="full-screen text-white text-center parallax"
+        style="background-image: url('Gambar WhatsApp 2025-07-13 pukul 13.26.44_bc236379.jpg');">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2 class="animate-fadein">Selamat Datang</h2>
+            <p class="lead animate-fadein delay-1">Jelajahi kekayaan budaya, tradisi, dan kearifan lokal Desa Juwiring,
+                Klaten, Jawa Tengah yang luar biasa.</p>
+        </div>
+    </section>
+
+    <section id="tentang" class="full-screen bg-light text-center tentang">
+        <div class="container">
+            <h2 class="animate-fadein mb-4">Tentang Payung Lukis Juwiring</h2>
+            <div class="text-start animate-fadein delay-1">
+                <p>Warga Klaten menghasilkan banyak kerajinan tangan yang sudah terkenal hingga tingkat nasional, bahkan
+                    sampai menembus pasar internasional, salah satunya kerajinan payung lukis.</p>
+                <p>Kerajinan ini asli dan khas dari Kecamatan Juwiring. Masyarakat yang menjadi perajin payung lukis di
+                    Juwiring mendapatkan keahlian dari warisan nenek moyang mereka.</p>
+                <p>Mengutip <em>klatenkab.go.id</em>, payung lukis khas Juwiring mulai dikembangkan sebagai usaha
+                    kerajinan tangan pada 1960-an. Pembuatan payung itu menggunakan bahan kayu dan kertas kemudian
+                    dilukis dengan warna dan corak yang menarik.</p>
+                <p>Salah satu pusat kerajinan payung lukis yang terkenal yakni di Dukuh Gumantar, Tanjung, Juwiring,
+                    Klaten. Para perajin di wilayah ini bernaung di paguyuban Payung Lukis Tradisional Ngudi Rahayu.</p>
+                <p>Konon, payung ini awalnya digunakan sebagai perlengkapan upacara kematian dan ritual adat di Keraton
+                    Kasunanan Surakarta Hadiningrat. Namun, seiring perkembangan zaman, perajin payung tradisional
+                    mengubah kegunaan payung untuk hiasan dan perlengkapan dekorasi.</p>
+                <p>Biasanya payung lukis khas Juwiring dijadikan aksesori di hotel, warung makan, tempat wisata dan
+                    hiasan rumah.</p>
+                <p>Pembuatan payung berbahan baku kayu, kain, dan kertas ini melalui beberapa tahapan dari pembuatan
+                    kerangka, penempelan kain atau kertas, proses pengecatan dan lukis. Harga payung lukis dibanderol
+                    mulai Rp 25.000 hingga jutaan rupiah per piece, tergantung motif, ukuran dan corak-corak lukisan
+                    yang dibuat.</p>
+                <p>Selain Desa Tanjung, ada dua desa lain yang juga mengembangkan kerajinan payung lukis di Kecamatan
+                    Juwiring, yaitu Kenaiban dan Kwarasan.</p>
+                <p>Wisatawan yang penasaran ingin melihat proses pembuatan payung lukis dapat berkunjung ke salah satu
+                    desa tersebut.</p>
+                <p>Payung lukis Juwiring memiliki keunikan frame setengah melengkung di bagian pinggirannya. Pada 2022,
+                    kerajinan payung lukis Juwiring ditetapkan sebagai Warisan Budaya Tak Benda oleh Kementerian
+                    Pendidikan Kebudayaan Riset dan Teknologi (Kemenristek), bersama teknik putaran miring gerabah
+                    Melikan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="full-screen bg-white text-center">
+        <div class="container">
+            <h2 class="mb-4 animate-fadein">Galeri Budaya</h2>
+            <div class="row g-3 justify-content-center animate-fadein delay-1">
+                <div class="col-md-4">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.45_8ca0508b.jpg" class="galeri-img"
+                        data-bs-toggle="modal" data-bs-target="#modal1">
+                </div>
+                <div class="col-md-4">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.45_76202d61.jpg" class="galeri-img"
+                        data-bs-toggle="modal" data-bs-target="#modal2">
+                </div>
+                <div class="col-md-4">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.44_1c83c270.jpg" class="galeri-img"
+                        data-bs-toggle="modal" data-bs-target="#modal3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="full-screen bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4 animate-fadein">Lokasi Desa Juwiring</h2>
+            <div class="ratio ratio-16x9 animate-fadein delay-1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.943176507038!2d110.72187871477896!3d-7.79621957962957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4c9782fcd05f%3A0x9e86b2f1e7dc1428!2sJuwiring%2C%20Klaten%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1720856000000"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-danger text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Warisan Payung Lukis Khas Juwiring</p>
+    </footer>
+
+    <!-- Modal Galeri -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.45_8ca0508b.jpg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.45_76202d61.jpg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="Gambar WhatsApp 2025-07-13 pukul 13.26.44_1c83c270.jpg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('toggleMode');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleBtn.innerHTML = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+        });
+    </script>
+</body>
+
+</html>
